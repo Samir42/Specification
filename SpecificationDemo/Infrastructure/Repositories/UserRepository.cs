@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Specification.Core.Entities;
 using SpecificationDemo.Core.Repositories;
-using SpecificationDemo.Specification;
+using SpecificationDemo.Specifications;
 
 namespace SpecificationDemo.Infrastructure.Repositories;
 

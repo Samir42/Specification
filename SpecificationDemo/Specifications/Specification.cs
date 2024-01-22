@@ -1,6 +1,6 @@
 using System.Linq.Expressions;
 
-namespace SpecificationDemo.Specification;
+namespace SpecificationDemo.Specifications;
 
 
 internal sealed class IdentitySpecification<T> : Specification<T>

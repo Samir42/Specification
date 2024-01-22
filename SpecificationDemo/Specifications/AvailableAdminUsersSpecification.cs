@@ -1,9 +1,9 @@
 using System.Linq.Expressions;
 using Specification.Core.Entities;
 
-namespace SpecificationDemo.Specification;
+namespace SpecificationDemo.Specifications;
 
-public class AvailableAdminsSpecification : Specification<User>
+public class AvailableAdminUsersSpecification : Specification<User>
 {
     public override Expression<Func<User, bool>> ToExpression()
     {

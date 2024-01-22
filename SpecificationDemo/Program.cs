@@ -1,21 +1,21 @@
 ﻿using Specification.Core.Entities;
 using SpecificationDemo.Infrastructure.Repositories;
-using SpecificationDemo.Specification;
+using SpecificationDemo.Specifications;
 using SpecificationDemo.Utils;
 using Spectre.Console;
 
 var specificationMap = new Dictionary<string, Specification<User>>
 {
     { "All", Specification<User>.All },
-    { "Available Admins", new AvailableAdminsSpecification() },
-    { "Deleted Admins", new DeletedAdminsSpecification() },
-    { "Locked Admins", new LockedAdminsSpecification() },
-    { "Locked Or Disabled Admins", new LockedAdminsSpecification().Or(new DisabledAdminsSpecification()) },
-    { "Locked And Deleted Admins", new LockedAdminsSpecification().And(new DeletedAdminsSpecification()) },
-    { "Deleted Or Disabled Admins", new DeletedAdminsSpecification().Or(new DisabledAdminsSpecification()) },
-    { "Available and Adult Admins", new AvailableAdminsSpecification().And(new AdultAdminsSpecification()) },
-    { "Available and Corporate Admins", new AvailableAdminsSpecification().And(new CorporateAdminsSpecification()) },
-    { "Deleted and Corporate Admins", new DeletedAdminsSpecification().And(new CorporateAdminsSpecification()) },
+    { "Available Admin Users", new AvailableAdminUsersSpecification() },
+    { "Deleted Users", new DeletedUsersSpecification() },
+    { "Locked Users", new LockedUsersSpecification() },
+    { "Locked Or Disabled Users", new LockedUsersSpecification().Or(new DisabledUsersSpecification()) },
+    { "Locked And Deleted Users", new LockedUsersSpecification().And(new DeletedUsersSpecification()) },
+    { "Deleted Or Disabled Users", new DeletedUsersSpecification().Or(new DisabledUsersSpecification()) },
+    { "Available and Adult Users", new AvailableAdminUsersSpecification().And(new AdultUsersSpecification()) },
+    { "Available and Corporate Users", new AvailableAdminUsersSpecification().And(new CorporateUsersSpecification()) },
+    { "Deleted and Corporate Users", new DeletedUsersSpecification().And(new CorporateUsersSpecification()) },
 };
 
 const bool RUN_CONTINUOSLY = true;

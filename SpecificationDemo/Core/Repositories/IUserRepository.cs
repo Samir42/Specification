@@ -1,5 +1,5 @@
 using Specification.Core.Entities;
-using SpecificationDemo.Specification;
+using SpecificationDemo.Specifications;
 
 namespace SpecificationDemo.Core.Repositories;
 
